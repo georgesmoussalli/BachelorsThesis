@@ -13,15 +13,14 @@ Extraire texte brut/ OCRisation
 
 Csv code sans chat est fait mais pas sur que le resultat soit assez bon 
 
-
-suite : 
-
-CSV a continuer de travailler retard car plus compliqué que prévu 
-
 Retard a cause du git cassé et du fait que je dois partager le projet avec le lab 
 
-Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms) et connaitre la précision de l’ocrisation (dictionnaire de base et médical) enlever les accents des dictionnaires.
+Corriger erreur d'OCR dans le texte brut 
 
+suite : 
+CSV a continuer de travailler retard car plus compliqué que prévu 
+
+Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms) et connaitre la précision de l’ocrisation (dictionnaire de base et médical) enlever les accents des dictionnaires.
 Retrait des accents des dictionnaires
 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
