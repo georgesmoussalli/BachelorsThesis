@@ -1,46 +1,38 @@
 Journal de bord : 
 
-Téléchargement de pdf2image pour pretraiter les images.
-Téléchargement de tesseract pour OCR une fois que les images sont traitées.
+Téléchargement de pdf2image pour pretraiter les images. Transforme les pdfs en .png et les organise par pdf 
+Téléchargement de tesseract pour OCR une fois que les images sont traitées. Prends les .png et extrait le texte brut par pdf
 On commence par transformer les pdfs en png pour meilleur qualité même si implique stockage massif et plus de temps de traitement donc long et plus complexe que prévu 
 ocr.ipynb : 
 Transforme pdf en listes d’images puis prétraite les images : moins gris,  augmente le contraste, seuil pour isoler le texte (image binaire)
-Ocr sur les images et les stockes un dossier par pdfs
+Ocr sur les images et les stockes un fichier .txt par pdfs
 Stocke les données extraites dans data dans le dossier texte extrait spécifique a chaque pdf
-Retrait de toud les accents
-
-Extraire texte brut/ OCRisation
-
-Csv code sans chat est fait mais pas sur que le resultat soit assez bon 
-
-Retard a cause du git cassé et du fait que je dois partager le projet avec le lab 
+Retrait de tous les accents du texte brut 
 
 Corriger erreur d'OCR dans le texte brut. Probleme avec le format des pdfs la colonne au milieu n'est pas reconnu par tesseract et donc les lignes se melangent. Test de OCRmypdf sinon utilisation 
 tesseract avec des modules specifiques.Si ca marche pas il va falloir transformer chaque image en plusieurs images pour se debarasser de la colonne et permettre
 a loutil tesseract de faire son travail.
-plan : trouver un moyen de reperer la colonne sinon travail sur les images pour les diviser en deux au niveau de la colonne si le format est similaire pour toutes les annees puis une fois que c est fait run OCRisation 
-et lui ajouter les bonnes corrections en testant a chaque fois puis CSV a l aide du texte et on est bon pour avancer
 
+On commence a la page start et on finit a la page fin pour pas s'encombrer.
+
+On cherche outil tesseract si ca marche bénéficie sinon séparation es images en trouver un moyen d éliminer tome et les commentaires en dessous 
+
+CSV mettre nom, prenom status, sujet de these et sexe a continuer de travailler retard car plus compliqué que prévu.Penser a note le nom de jeune fille et si elle est mariée. Donc noter comment elle est appelée dans le résumé
+penser a mettre le titre m. mme. ou Mlle. s'il est present 
 
 suite : 
-CSV a continuer de travailler retard car plus compliqué que prévu 
-
-Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms) et connaitre la précision de l’ocrisation (dictionnaire de base et médical) enlever les accents des dictionnaires.
-Retrait des accents des dictionnaires
+Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) enlever les accents des dictionnaires.
+Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms) + remplir case sexe du csv 
 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
 
 Reconnaitre hommes et femme et mettre infos dans csv + categorie pas sur ou prenoms double sexe ect sur lesquels il faudra faire des recherches specifiques et rentrer manuellement dans les csv ou 
 Prénom mixte sans madame ou mademoiselle camille problématique recherche dans université paris cité
 Marie est un piège car masculin a la fin du 19eme siècle
-Marie compose peut être homme. 
-
-
-Quelles autres données sont interessantes? Femme mariée ou pas ect
-
+Marie compose peut être homme. donc tous les marie sont dans la categorie pas sur 
 
 Analyse des themes des theses des femmes comparés aux hommes 
-
+Guide Rosenvald les mots clefs en fin de pdfs a faire pendant les vacances
 
 
 Bibliographie(tout ce que j’ai utilisé) :  
