@@ -24,7 +24,7 @@ Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms) 
 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
 
-Corriger erreur d'ocr dans les sujets de theses 
+Corriger erreur d'ocr dans les sujets de theses grace aux dictionnaaires francais et medical et la distance avec le mot le plus proche du dictionnaire
 
 Reconnaitre hommes et femme et mettre infos dans csv + categorie pas sur ou prenoms double sexe ect sur lesquels il faudra faire des recherches specifiques et rentrer manuellement dans les csv ou 
 Prénom mixte sans madame ou mademoiselle camille problématique recherche dans université paris cité
