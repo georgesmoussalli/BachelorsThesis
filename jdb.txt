@@ -9,22 +9,22 @@ Ocr sur les images et les stockes un fichier .txt par pdfs
 Stocke les données extraites dans data dans le dossier texte extrait spécifique a chaque pdf
 Retrait de tous les accents du texte brut 
 
-Corriger erreur d'OCR dans le texte brut. Probleme avec le format des pdfs la colonne au milieu n'est pas reconnu par tesseract et donc les lignes se melangent. Test de OCRmypdf sinon utilisation 
-tesseract avec des modules specifiques.Si ca marche pas il va falloir transformer chaque image en plusieurs images pour se debarasser de la colonne et permettre
-a loutil tesseract de faire son travail.
-
-On commence a la page start et on finit a la page fin pour pas s'encombrer.
+On commence a la page start et on finit a la page fin pour pas s'encombrer de pages inutiles pour l'instant et pour permettre l'extraction du texte de créer moins d'erreur pour le df
 
 On cherche outil tesseract si ca marche bénéficie sinon séparation es images en trouver un moyen d éliminer tome et les commentaires en dessous 
+le mieux est de séparer les images en deux car ca marche mal sinon donc on separe 
 
-CSV mettre nom, prenom status, sujet de these et sexe a continuer de travailler retard car plus compliqué que prévu.Penser a note le nom de jeune fille et si elle est mariée. Donc noter comment elle est appelée dans le résumé
-penser a mettre le titre m. mme. ou Mlle. s'il est present 
+CSV mettre nom, prenom statut, sujet de these et sexe 
 
 suite : 
+corriger process_folder puis faire porcess_all_folders
+Csv rajouter nom de jeune fille et statut m. mlle ou mme. Probleme avec nom sans parentheses prendre celui sur whatsapp et ameliorer
 Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) enlever les accents des dictionnaires.
 Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms) + remplir case sexe du csv 
 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
+
+Corriger erreur d'ocr dans les sujets de theses 
 
 Reconnaitre hommes et femme et mettre infos dans csv + categorie pas sur ou prenoms double sexe ect sur lesquels il faudra faire des recherches specifiques et rentrer manuellement dans les csv ou 
 Prénom mixte sans madame ou mademoiselle camille problématique recherche dans université paris cité
