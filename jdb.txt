@@ -16,9 +16,15 @@ le mieux est de séparer les images en deux car ca marche mal sinon donc on sepa
 
 CSV mettre nom, prenom statut, sujet de these et sexe, probleme le sujet est parfois separer en deux pages a la fin dune page et le debut d une autre 
 
-suite : 
+probleme les parentheses disparaisse souvent dans l'ocrisation et fin d une page debut d une autre marche pas donc on extrait le texte brut de chaque annee au lieu de faire image par image et
+on dataframe toute l annee d un coup. regle le probleme de theses separees en deux pages. 
+
 corriger process_folder puis faire porcess_all_folders
-Csv rajouter nom de jeune fille et statut m. mlle ou mme. Probleme avec nom sans parentheses. regler le probleme de separation du titre de these entre 2 pages
+regler le probleme de separation du titre de these entre 2 pages
+
+suite : 
+corriger colonne sujet quand y a un nom (majuscules) créer une nouvelle ligne en dessous avec le nom en question et le sujet de these et le prenom 
+df rajouter nom de jeune fille et statut m. mlle ou mme. Probleme avec nom sans parentheses. 
 Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
 enlever les accents des dictionnaires.
@@ -33,19 +39,3 @@ Marie compose peut être homme. donc tous les marie sont dans la categorie pas s
 Analyse des themes des theses des femmes comparés aux hommes 
 Guide Rosenvald les mots clefs en fin de pdfs a faire pendant les vacances
 
-
-Bibliographie(tout ce que j’ai utilisé) :  
-bibliotheques python ect.
-pdf2image
-tesseract
-Bibliotheque python : 
-import os 
-import numpy as np 
-import cv2
-from pdf2image import convert_from_path
-from IPython.display import display
-from PIL import Image
-import pytesseract
-import unicodedata
-import re
-Perplexity ia pour csv 
