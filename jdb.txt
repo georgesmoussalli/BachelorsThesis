@@ -14,23 +14,27 @@ On commence a la page start et on finit a la page fin pour pas s'encombrer de pa
 On cherche outil tesseract si ca marche bénéficie sinon séparation es images en trouver un moyen d éliminer tome et les commentaires en dessous 
 le mieux est de séparer les images en deux car ca marche mal sinon donc on separe 
 
-CSV mettre nom, prenom statut, sujet de these et sexe, probleme le sujet est parfois separer en deux pages a la fin dune page et le debut d une autre 
+CSV mettre nom, prenom , sujet de these probleme le sujet est parfois separer en deux pages a la fin dune page et le debut d une autre 
 
 probleme les parentheses disparaisse souvent dans l'ocrisation et fin d une page debut d une autre marche pas donc on extrait le texte brut de chaque annee au lieu de faire image par image et
 on dataframe toute l annee d un coup. regle le probleme de theses separees en deux pages. 
 
 corriger process_folder puis faire porcess_all_folders
 regler le probleme de separation du titre de these entre 2 pages
+corriger colonne sujet quand y a un nom (majuscules) créer une nouvelle ligne en dessous avec le nom en question et le sujet de these et le prenom 
+
 
 suite : 
-corriger colonne sujet quand y a un nom (majuscules) créer une nouvelle ligne en dessous avec le nom en question et le sujet de these et le prenom 
+Nouveau probleme separation aves les tomes qui pose probleme donc revoir process image et separer la feuille en deux apres l avoir separer autour des tomes pour permettre de rien rater
 df rajouter nom de jeune fille et statut m. mlle ou mme. Probleme avec nom sans parentheses. 
+Etre sur que le df est clean et rate le moins d'info possible.
 Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
 enlever les accents des dictionnaires.
 Corriger les mots faux de l ocrisation a l aide des dictionnaires.
 
-Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms + rajouter ceux d'amelie puche) + remplir case sexe du csv 
+Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms + rajouter ceux d'amelie puche) + remplir case sexe du csv + mettre case résolu vrai ou faux si la ligne a un prénom reconnu avec un sexe reconnu 
+elle est résolu sinon il faut la résoudre
 Reconnaitre hommes et femme et mettre infos dans csv + categorie pas sur ou prenoms double sexe ect sur lesquels il faudra faire des recherches specifiques et rentrer manuellement dans les csv ou 
 Prénom mixte sans madame ou mademoiselle camille problématique recherche dans université paris cité
 Marie est un piège car masculin a la fin du 19eme siècle
