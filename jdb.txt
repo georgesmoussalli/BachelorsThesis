@@ -26,7 +26,7 @@ corriger colonne sujet quand y a un nom (majuscules) créer une nouvelle ligne e
 
 suite : 
 Nouveau probleme separation aves les tomes qui pose probleme donc revoir process image et separer la feuille en deux apres l avoir separer autour des tomes pour permettre de rien rater
-df rajouter nom de jeune fille et statut m. mlle ou mme. Probleme avec nom sans parentheses. 
+df rajouter nom de jeune fille et statut m. mlle ou mme
 Etre sur que le df est clean et rate le moins d'info possible.
 Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) 
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
