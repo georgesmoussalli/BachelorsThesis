@@ -22,16 +22,20 @@ on dataframe toute l annee d un coup. regle le probleme de theses separees en de
 corriger process_folder puis faire porcess_all_folders
 regler le probleme de separation du titre de these entre 2 pages
 corriger colonne sujet quand y a un nom (majuscules) créer une nouvelle ligne en dessous avec le nom en question et le sujet de these et le prenom 
+Nouveau probleme separation aves les tomes qui pose probleme donc revoir process image et separer la feuille en deux apres l avoir separer autour des tomes pour permettre de rien rater
+Etre sur que le df est clean et rate le moins d'info possible.
 
 
 suite : 
-Nouveau probleme separation aves les tomes qui pose probleme donc revoir process image et separer la feuille en deux apres l avoir separer autour des tomes pour permettre de rien rater
 df rajouter nom de jeune fille et statut m. mlle ou mme
-Etre sur que le df est clean et rate le moins d'info possible.
-Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) 
+Dictionnaires Francais et medical pour connaitre la précision de l’ocrisation (dictionnaire de base et médical) : 
+Liste de mots français (). https://github.com/chrplr/openlexicon/blob/master/ datasets-info/Liste-de-mots-francais-Gutenberg/liste.de.mots.francais. frgut.txt.
 Calculer précision tesseract avec les dictionnaires et faire des graphes à inclure dans le rapport.
 enlever les accents des dictionnaires.
-Corriger les mots faux de l ocrisation a l aide des dictionnaires.
+
+Corriger les mots faux de l ocrisation a l aide des dictionnaires: 
+NLTK : Natural Language Tool Documentation (). https://www.nltk.org/.
+
 
 Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms + rajouter ceux d'amelie puche) + remplir case sexe du csv + mettre case résolu vrai ou faux si la ligne a un prénom reconnu avec un sexe reconnu 
 elle est résolu sinon il faut la résoudre
