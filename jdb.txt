@@ -34,20 +34,16 @@ dictionnaire medical : https://github.com/CodeSante/medical-wordlist/tree/main/f
 seulement 73.4% de precision donc changement de modele tesseract on passe au modele best + changement de moteur on passe a LSTM + legacy au lieu du
 moteur par defaut 
 On rajoute binarisation et denoising de la qualite des images 
+Corriger les mots faux de l ocrisation a l aide des dictionnaires: 
+tu pourrais envisager une correction automatique OCR après reconnaissance (spellchecker français + médical).
+fuzzywuzzy pour match flous avec ton francais.txt
+
 
 suite : 
 df rajouter nom de jeune fille et statut m. mlle ou mme revoir le regex pour qu'il rate rien de rien 
 
 Changer tesseract a tesseract best 
 
-Corriger les mots faux de l ocrisation a l aide des dictionnaires: 
-tu pourrais envisager une correction automatique OCR après reconnaissance (spellchecker français + médical).
-
-Exemples de librairies :
-
-pyspellchecker
-fuzzywuzzy pour match flous avec ton francais.txt
-NLTK : Natural Language Tool Documentation (). https://www.nltk.org/.
 
 Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms + rajouter ceux d'amelie puche) + remplir case sexe du csv + mettre case résolu vrai ou faux si la ligne a un prénom reconnu avec un sexe reconnu 
 elle est résolu sinon il faut la résoudre
@@ -55,6 +51,8 @@ Reconnaitre hommes et femme et mettre infos dans csv + categorie pas sur ou pren
 Prénom mixte sans madame ou mademoiselle camille problématique recherche dans université paris cité
 Marie est un piège car masculin a la fin du 19eme siècle
 Marie compose peut être homme. donc tous les marie sont dans la categorie pas sur 
+
+analyse statistique : 
 
 Nombre de femmmes vs nombre d'hommes total puis par annee et faire des graphes 
 
