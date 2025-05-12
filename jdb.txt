@@ -38,24 +38,23 @@ Corriger les mots faux de l ocrisation a l aide des dictionnaires:
 tu pourrais envisager une correction automatique OCR après reconnaissance (spellchecker français + médical).
 fuzzywuzzy pour match flous avec ton francais.txt
 
-
-suite : 
-df rajouter nom de jeune fille et statut m. mlle ou mme revoir le regex pour qu'il rate rien de rien 
-
-Changer tesseract a tesseract best 
-
-
 Dictionnaires pour pouvoir reconnaitre hommes femmes (dictionnaire de prénoms + rajouter ceux d'amelie puche) + remplir case sexe du csv + mettre case résolu vrai ou faux si la ligne a un prénom reconnu avec un sexe reconnu 
 elle est résolu sinon il faut la résoudre
 Reconnaitre hommes et femme et mettre infos dans csv + categorie pas sur ou prenoms double sexe ect sur lesquels il faudra faire des recherches specifiques et rentrer manuellement dans les csv ou 
 Prénom mixte sans madame ou mademoiselle camille problématique recherche dans université paris cité
 Marie est un piège car masculin a la fin du 19eme siècle
 Marie compose peut être homme. donc tous les marie sont dans la categorie pas sur 
-
-analyse statistique : 
-
 Nombre de femmmes vs nombre d'hommes total puis par annee et faire des graphes 
 
+
+
+suite : 
 Analyse des themes des theses des femmes comparés aux hommes 
 Guide Rosenvald les mots clefs en fin de pdfs a faire pendant les vacances
+Regler github 
+
+Commencer ecriture : plan 
+
+Continuer ecriture 
+
 
