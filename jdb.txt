@@ -54,6 +54,37 @@ Guide Rosenvald les mots clefs en fin de pdfs a faire pendant les vacances
 Regler github 
 
 Commencer ecriture : plan 
+Comment la présence croissante des femmes dans la production doctorale à la Faculté de Médecine de 
+l’Université de Paris entre 1870 et 1939 s’est-elle traduite (ou non) dans les thématiques de leurs 
+travaux ?
+et le plan suivant :
+
+I. Construction du corpus et traitement technique des thèses (1870–1939)
+
+    Présentation de la source (thèses soutenues à l’Université de Paris)
+    Méthodologie :
+        Extraction des métadonnées à partir des PDF
+        Traitement par OCR (optical character recognition)
+        Constitution du tableau recensant les doctorant·es
+    Définition des critères d’identification du sexe (prénom, dictionnaire, etc.)
+    Limites et atouts de la méthode (prénoms ambigus, erreurs OCR, etc.)
+
+II. Analyse de la présence féminine et des thématiques des thèses
+
+    Évolution chronologique du nombre de femmes doctorantes (graphiques, tendances)
+    Répartition par Thématiques
+    Étude des titres/sujets :
+        Absence de spécificité genrée dans les choix thématiques
+        Comparaison hommes/femmes par discipline
+    Hypothèse : intégration dans des normes thématiques déjà en place
+
+III. Conclusion : que nous apprend cette cartographie sur la place des femmes à l’université ?
+
+    Confirmation d’un mouvement quantitatif fort mais sans rupture thématique
+    Analyse critique : présence féminine sans visibilité idéologique ?
+    Ouverture :
+        Concurrence genrée sur les parcours professionnels après la thèse ?
+        Vers la question de la reconnaissance institutionnelle ?
 
 Continuer ecriture 
 
