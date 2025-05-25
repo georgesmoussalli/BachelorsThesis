@@ -47,10 +47,10 @@ Marie est un piège car masculin a la fin du 19eme siècle
 Marie compose peut être homme. donc tous les marie sont dans la categorie pas sur 
 Nombre de femmmes vs nombre d'hommes total puis par annee et faire des graphes 
 corrections des prenoms avec le meme mode que les sujets
+Ameliorer regex 
 
 
 suite : 
-Ameliorer regex 
 Analyse des themes des theses des femmes comparés aux hommes 
 PDB Analyse thematique + tout recompiler
 Guide Rosenvald les mots clefs en fin de pdfsces
