@@ -1,4 +1,12 @@
 Journal de bord : 
+travail de recherche qui sinscrit dans la recherche de doctorat pour reperer les femmes a cette Faculté
+et voir qui sont leurs soutien dans la Faculté
+est ce que elles se professionalisent? Pas toutes elles rencontrent souvent un mari et laisse tomber 
+leur savoir pour etre femme au foyer. 
+Parler du labo de mikhael Intro et Conclusion 
+Citer la compensation des russes par les francaises dans les universites Terres Promises ( ou interdites) Fauvel 
+Article de Nathalie PijArt Nicaud.
+
 
 Téléchargement de pdf2image pour pretraiter les images. Transforme les pdfs en .png et les organise par pdf 
 Téléchargement de tesseract pour OCR une fois que les images sont traitées. Prends les .png et extrait le texte brut par pdf
@@ -48,13 +56,10 @@ Marie compose peut être homme. donc tous les marie sont dans la categorie pas s
 Nombre de femmmes vs nombre d'hommes total puis par annee et faire des graphes 
 corrections des prenoms avec le meme mode que les sujets
 Ameliorer regex 
-
-
-suite : 
 Analyse des themes des theses des femmes comparés aux hommes 
-PDB Analyse thematique + tout recompiler
-Guide Rosenvald les mots clefs en fin de pdfsces
-Regler github 
+PDB Analyse thematique avec bert kmeans sentencetransformers
+50% des theses ne sont pas classifiables car trop courtes ou pas de correspondance avec termed medical
+
 
 Commencer ecriture : plan 
 Comment la présence croissante des femmes dans la production doctorale à la Faculté de Médecine de 
@@ -89,7 +94,23 @@ III. Conclusion : que nous apprend cette cartographie sur la place des femmes à
         Concurrence genrée sur les parcours professionnels après la thèse ?( pas aller trop loin)
         Vers la question de la reconnaissance institutionnelle ? (pas aller trop loin) citer amelie puche Dicopohlis
 
-
-Continuer ecriture 
-
+Bibliographie :  import os 
+import numpy as np 
+import cv2
+from pdf2image import convert_from_path
+import pytesseract
+import unicodedata
+import re
+import pandas as pd
+import natsort
+import matplotlib.pyplot as plt
+import spellchecker
+import rapidfuzz
+import unidecode 
+import tqdm 
+from sklearn.decomposition import NMF
+from sentence_transformers import SentenceTransformer
+from sklearn.cluster import KMeans
+import seaborn as sns 
+import os
 
