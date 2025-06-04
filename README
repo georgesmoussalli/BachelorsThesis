@@ -41,6 +41,9 @@ Les résultats montrent une lente augmentation de la présence féminine, sans t
 ### Prérequis
 
 Ce projet a été développé sous Python 3.9+. Il nécessite une plateforme compatible avec `pytesseract` (Tesseract OCR installé) et l'environnement de visualisation Python courant.
+Utilisation des deux dictionnaires suivants 
+dictionnaire medical : https://github.com/CodeSante/medical-wordlist/tree/main/fr
+Liste de mots français (). https://github.com/chrplr/openlexicon/blob/master/datasets-info/Liste-de-mots-francais-Gutenberg/liste.de.mots.francais.frgut.txt.
 
 ### Installation
 
