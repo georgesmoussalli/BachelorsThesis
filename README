@@ -1,0 +1,51 @@
+# Analyse des thèses de médecine à l’Université de Paris (1870–1939)
+
+## Informations de base
+
+- **Auteur :** [Votre nom ici]
+- **Encadrants :** Mikhael [Nom complet], Mme. Puche
+- **Année académique :** 2024–2025
+
+## À propos
+
+Ce projet explore la manière dont la présence croissante des femmes dans la production doctorale à la Faculté de Médecine de l’Université de Paris, entre 1870 et 1939, s’est traduite (ou non) dans les thématiques de leurs travaux. Il repose sur l'analyse d'un corpus numérique de thèses médicales, combinant techniques d'OCR, d'analyse linguistique et de machine learning.
+
+## Résumé de la recherche
+
+Les étapes du projet sont les suivantes :
+
+1. **Constitution du corpus** : numérisation d’index de thèses PDF de 1870 à 1939.
+2. **Traitement automatique** :
+   - Conversion des PDF en images
+   - Prétraitement (nettoyage, binarisation, segmentation)
+   - OCR via `pytesseract` avec correction orthographique par `rapidfuzz`
+3. **Structuration des données** :
+   - Extraction des noms, prénoms, sujets et années
+   - Détection du genre à partir des prénoms
+4. **Clustering thématique** :
+   - Embedding sémantique des titres de thèse via BERT (SentenceTransformer)
+   - Classification automatique en 12 clusters à l’aide de `KMeans`
+
+### Illustration des résultats :
+
+- Diagrammes de répartition des thèses par genre
+- Évolution temporelle du nombre de femmes
+- Répartition thématique selon le genre
+
+Les résultats montrent une lente augmentation de la présence féminine, sans transformation radicale des thématiques abordées : les femmes s’intègrent aux cadres disciplinaires existants plutôt qu’elles ne les modifient.
+
+---
+
+## Installation et utilisation
+
+### Prérequis
+
+Ce projet a été développé sous Python 3.9+. Il nécessite une plateforme compatible avec `pytesseract` (Tesseract OCR installé) et l'environnement de visualisation Python courant.
+
+### Installation
+
+Assurez-vous d'avoir installé les dépendances listées dans le fichier `requirements.txt`
+
+BachelorsThesis - Georges Moussalli 
+Copyright (c) 2025 EPFL
+Ce programme est licencié sous les termes de la License MIT.
